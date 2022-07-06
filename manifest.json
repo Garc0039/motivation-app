@@ -1,0 +1,11 @@
+{
+    "name": "Test extension",
+    "version": "1.0.0",
+    "description": "test lol",
+    "manifest_version": 3,
+    "author": "Team 8",
+    "action":{
+
+        "default_title": "Not a covid report"
+    }
+}
