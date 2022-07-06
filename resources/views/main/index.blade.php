@@ -204,13 +204,13 @@
     <script>
         function open(course)
         {
-            course = document.getElementById(`${course}`)
-            course.addEventListener("click", function(event) {
+            courses = document.getElementById(`${course}`)
+            courses.addEventListener("click", function(event) {
                 //event.stopPropagation() - it stops the bubbling of an event to parent elements, by preventing parent event handlers from being executed
                 event.stopPropagation();
 
                 //classList.toggle - it toggles between adding and removing a class name from an element
-                course.classList.toggle('is-active');
+                courses.classList.toggle('is-active');
             });
         }
     </script>
