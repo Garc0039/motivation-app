@@ -5,7 +5,7 @@
     "manifest_version": 3,
     "author": "Team 8",
     "action":{
-
-        "default_title": "Not a covid report"
+        "default_title": "Not a covid report",
+        "default_popup": "welcome.html"
     }
 }
