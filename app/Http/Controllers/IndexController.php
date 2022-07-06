@@ -10,7 +10,7 @@ class IndexController extends Controller
 {
     public function index() {
         $file = File::all()->first();
-        Task::createTasks();
+        // Task::createTasks();
         return view('index', $file);
     }
 }
