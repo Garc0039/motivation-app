@@ -9,8 +9,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index() {
-        $file = File::all()->first();
-        Task::createTasks();
-        return view('index', $file);
+        $file = Task::all();
+        return view('main.index', compact("file"));
     }
 }
