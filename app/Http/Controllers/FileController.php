@@ -34,6 +34,6 @@ class FileController extends Controller
         $upload_file->content = $content;
         $upload_file->save();
         Task::createTasks();
-        return redirect()->back()->with('success', 'File  submitted');
+        return redirect(route("index"));
     }
 }
