@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->date('deadline');
+            $table->string('weight');
+            $table->boolean('innerTasks')->default(0);
             $table->timestamps();
         });
     }

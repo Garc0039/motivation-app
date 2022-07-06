@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Task;
 use Illuminate\Http\Request;
 use Smalot\PdfParser\Parser;
 use App\Models\File;
@@ -32,6 +33,7 @@ class FileController extends Controller
         $upload_file->filesize = $file->getSize();
         $upload_file->content = $content;
         $upload_file->save();
+//        Task::createTasks();
         return redirect()->back()->with('success', 'File  submitted');
     }
 }
