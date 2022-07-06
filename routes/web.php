@@ -19,7 +19,10 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-Route::get('/', [IndexController::class, 'index']);
+//Route::get('/', [IndexController::class, 'index']);
+Route::get('/', function(){
+    return view('main.index');
+});
 
 Route::get('upload', [FileController::class, 'index'])->name('file');
 Route::post('upload', [FileController::class, 'store'])->name('file.store');
